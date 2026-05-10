@@ -206,7 +206,7 @@ body{font-family:'Cormorant Garamond',serif;overflow:hidden;min-height:100vh;}
 
 <button id="music-btn" onclick="toggleMusic()"><span id="music-icon">🎵</span><span id="music-label">music on</span></button>
 <audio id="bgMusic" loop>
-  <source src="https://cdn.pixabay.com/audio/2022/10/16/audio_127f0cc208.mp3" type="audio/mpeg">
+  <source src="music.mp3" type="audio/mpeg">
 </audio>
 
 <script>
@@ -214,7 +214,7 @@ body{font-family:'Cormorant Garamond',serif;overflow:hidden;min-height:100vh;}
 const music = document.getElementById('bgMusic');
 const musicBtn = document.getElementById('music-btn');
 let musicOn = false;
-music.volume = 0.6;
+music.volume = 0.8;
 
 function toggleMusic(){
   if(musicOn){
